@@ -2,31 +2,249 @@
 
 @section('content')
         @include('layouts.header')
-                <section id="section-content" class="content page-1 moto-section" data-widget="section" data-container="section">
-                            <div data-css-name="moto-container_content_57b6d0d43" class="moto-widget moto-widget-container moto-container_content_57b6d0d43" data-widget="container" data-container="container"><div class="moto-widget moto-widget-row row-fixed" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-12" data-container="container"><div class="moto-widget moto-widget-spacer moto-preset-default                     moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="lama" data-visible-on="mobile-v">
-    <div class="moto-widget-spacer-block" style="height:40px"></div>
-</div><div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_6" style="text-align: center;">WELCOME TO</p></div></div><div data-animation="fadeIn" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto wow fadeIn" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_4" style="text-align: center;"><span class="moto-color1_3">EQUINE</span>INTEL<br></p></div></div><div data-spacing="aama" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_6" style="text-align: center; text-transform: uppercase;">Sophisticated handicapping In less Than 30 Seconds!<br></p></div></div></div></div></div></div><div class="moto-widget moto-widget-row row-fixed" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-2 undefined" data-container="container"></div><div class="moto-cell col-sm-8" data-container="container"><div data-spacing="alml" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-large moto-spacing-bottom-medium moto-spacing-left-large" data-widget="text" data-preset="default"></div>
 
+        <style type="text/css">
+    .recent-work .owl-carousel {
+        margin-left: -10px;
+    }
+    .our-clients .owl-carousel {
+        margin-left: -2px;
+    }
+    .recent-work .owl-carousel,
+    .our-clients .owl-carousel {
+        padding-top: 30px;
+    }
+    .recent-work .owl-buttons,
+    .our-clients .owl-buttons {
+        top: 0;
+        left: -3px;
+    }
+    .our-clients .owl-buttons {
+        left: -10px;
+    }
+
+    .testimonials-v1 {
+        padding-top: 40px;
+    }
+
+    .recent-work .recent-work-item .fa {
+        width: 36px;
+        height: 36px;
+        margin-top: -18px;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .recent-news-inner {
+        padding: 10px 15px 0;
+    }
+    .recent-work .recent-work-item .fa {
+        width: 36px;
+        height: 36px;
+        margin-top: -18px;
+        font-size: 14px;
+        padding: 12px;
+    }
+.recent-work {
+  position: relative;
+}
+.recent-work a:hover {
+  text-decoration: none;
+}
+.recent-work h2,
+.ecommerce .recent-work h2 {
+  margin: 3px 0 5px;
+}
+.recent-work h2 a {
+    color: #3e4d5c;
+}
+.recent-work h2 a:hover {
+    color: #E02222;
+}
+.recent-work-item {
+    padding-left: 10px;
+}
+.recent-work .owl-buttons {
+    left: -74px;
+    right: auto;
+    top: 0;
+}
+.recent-work .recent-work-item a.recent-work-description {
+    padding: 10px;
+    display: block;
+    background: #081b5d;
+}
+.recent-work .recent-work-item:hover a.recent-work-description {
+    background: #E6400C;
+    transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -webkit-transition: all 0.9s ease;      
+}
+.recent-work .recent-work-item strong {
+    color: white;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+.recent-work .recent-work-item b {
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+.recent-work .recent-work-item:hover b,
+.recent-work .recent-work-item:hover strong {
+    color: #fff;
+}
+.recent-work .recent-work-item em {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.recent-work .recent-work-item .fa {
+    color: #fff;
+    padding: 16px 30px 16px 18px;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    width: 47px;
+    height: 47px;
+    margin-top: -23.5px;
+    border-radius: 47px;
+    background: rgba(0,0,0,0.5);
+    transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;  
+}
+.recent-work .recent-work-item .fa:hover {
+    color: #E02222;
+}
+.recent-work .recent-work-item .fa-link {
+    left: -50px;
+}
+.recent-work .recent-work-item .fa-search {
+    right: -50px;
+}
+.recent-work .recent-work-item:hover .fa-link {
+    left: 15%;
+}
+.recent-work .recent-work-item:hover .fa-search {
+    right: 15%;
+}
+</style>
+                <section id="section-content" class="content page-1 moto-section" data-widget="section" data-container="section">
+                            <div data-css-name="moto-container_content_57b6d0d43" class="moto-widget moto-widget-container moto-container_content_57b6d0d43" data-widget="container" data-container="container"><div class="moto-widget moto-widget-row row-fixed" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-12" data-container="container">
+
+<!--  -->
+
+<div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><div style="height: 50px"></div></div></div><div data-animation="fadeIn" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto wow fadeIn" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_4" style="font-family:'Lobster',cursive; font-style:italic; text-shadow: 1px 1px 1px rgba(0,0,0,0.7);text-align: center;">Equine Intel<br></p></div></div>
+    <!--                         
+                            <div class="moto-widget moto-widget-spacer moto-preset-default                     moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="lama" data-visible-on="mobile-v">
+    
+</div> -->
+<div style="padding-bottom: 3.5%"></div>
+<div data-spacing="aama" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_6" style="    text-shadow: 1px 1px 1px rgba(0,0,0,0.7); font-family:Roboto Slab, sans-serif;text-align: center; text-transform: uppercase;">Sophisticated handicapping In less Than 30 Seconds!<br></p></div></div></div></div></div></div><div class="moto-widget moto-widget-row row-fixed" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-2 undefined" data-container="container"></div><div class="moto-cell col-sm-8" data-container="container"><div data-spacing="alml" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-large moto-spacing-bottom-medium moto-spacing-left-large" data-widget="text" data-preset="default"></div>
+<div class="row">
 <ul style="margin-left: 30%;">
 
-<li style="float: left;">
+<li style="float: left; padding-left: 0px;padding-right: 20px;">
 <div data-widget-id="wid__button__59a5189c1c92d" class="moto-widget moto-widget-button moto-preset-default moto-align-center moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto " data-widget="button" style="padding-top: 0px;padding-bottom: 10px;">
-            <a href="/test"   data-action="url" class="moto-widget-button-link moto-size-medium moto-link"><span class="fa moto-widget-theme-icon"></span> <span class="moto-widget-button-label">Subscribe Now</span></a>
+            <a href="/test"   data-action="url" class="moto-widget-button-link moto-size-medium moto-link"><span class="fa moto-widget-theme-icon"></span> <span class="moto-widget-button-label">START YOUR FREE TRIAL</span></a>
             
     </div>
 </li>
 <li style="float: left;">
     <div data-widget-id="wid__button__59a5189c1cb8e" class="moto-widget moto-widget-button moto-preset-2 moto-align-center moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto " data-widget="button" style="padding-bottom: 10px;">
-            <a href="programs/index.html"   data-action="page" class="moto-widget-button-link moto-size-medium moto-link"><span class="fa moto-widget-theme-icon"></span> <span class="moto-widget-button-label">Learn More</span></a>
+            <a href="/"   data-action="page" class="moto-widget-button-link moto-size-medium moto-link"><span class="fa moto-widget-theme-icon"></span> <span class="moto-widget-button-label">Learn More</span></a>
     </div>
     </li>
 </ul>
-<div style="padding-bottom: 27.5%;">
+</div> <div style="padding-bottom: 2.5%;">
 
 </div>
-    </div><div class="moto-cell col-sm-2" data-container="container"></div></div></div></div><div class="moto-widget moto-widget-spacer moto-preset-default                  moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="lama" data-visible-on="mobile-v">
-    <div class="moto-widget-spacer-block" style="height:30px"></div>
-</div></div>
+ 
+<div class="row">
+
+    <ul style="margin-left: 34%;">
+
+    <li style="float: left; padding-left: 0px;padding-right: 20px;">
+    <div data-widget-id="wid__button__59a5189c1c92d" class="moto-widget moto-widget-button moto-preset-default moto-align-center moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto " data-widget="button" style="padding-top: 0px;padding-bottom: 10px;">
+                <a href="{{ url('/login/facebook') }}"   data-action="url" class="moto-widget-button-link moto-size-medium moto-link"><i class="fa fa-facebook-f"></i> <span class="moto-widget-button-label">acebook</span></a>
+                
+        </div>
+    </li>
+    <li style="float: left; padding-left: 30px;">
+    <div data-widget-id="wid__button__59a5189c1c92d" class="moto-widget moto-widget-button moto-preset-default moto-align-center moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto " data-widget="button" style="padding-top: 0px;padding-bottom: 10px;">
+                <a href="{{ url('/login/google') }}"   data-action="url" class="moto-widget-button-link moto-size-medium moto-link"><i class="fa fa-google"></i> <span class="moto-widget-button-label">oogle</span></a>
+                
+        </div>
+        </li>
+    </ul>
+</div>
+<div style="padding-bottom: 17%;">
+    
+</div>
+
+<div class="row recent-work">
+<div class="col-sm-2">
+</div>
+                        
+              <div class="recent-work-item">
+                <em>
+                  <img src="../../mt-demo/59100/59143/mt-content/uploads/2016/08/tag1.jpg" alt="Amazing Project" class="img-responsive">
+                  <a href="/test"><i class="fa fa-link"></i></a>
+                  <a href="#plans" class="fancybox-button" title="Free Trial" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                </em>
+                <a class="recent-work-description" href="javascript:;">
+                  <strong>FREE TRIAL</strong>
+                  <b>Price: FREE</b>
+                </a>
+              </div>
+              <div class="recent-work-item">
+                <em>
+                  <img src="../../mt-demo/59100/59143/mt-content/uploads/2016/08/tag2.jpg" alt="Amazing Project" class="img-responsive">
+                  <a href="/test"><i class="fa fa-link"></i></a>
+                  <a href="#plans" class="fancybox-button" title="Daily Pass" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                </em>
+                <a class="recent-work-description" href="javascript:;">
+                  <strong>DAILY PASS</strong>
+                  <b>Price: $11.99</b>
+                </a>
+              </div>
+              <div class="recent-work-item">
+                <em>
+                  <img src="../../mt-demo/59100/59143/mt-content/uploads/2016/08/tag3.jpg" alt="Amazing Project" class="img-responsive">
+                  <a href="/test"><i class="fa fa-link"></i></a>
+                  <a href="#plans" class="fancybox-button" title="Weekly Pass" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                </em>
+                <a class="recent-work-description" href="javascript:;">
+                  <strong>WEEKLY PASS</strong>
+                  <b>Price: $14.99</b>
+                </a>
+              </div>
+              <div class="recent-work-item">
+                <em>
+                  <img src="../../mt-demo/59100/59143/mt-content/uploads/2016/08/tag4.jpg" alt="Amazing Project" class="img-responsive">
+                  <a href="/test"><i class="fa fa-link"></i></a>
+                  <a href="#plans" class="fancybox-button" title="Monthly Pass" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+                </em>
+                <a class="recent-work-description" href="javascript:;">
+                  <strong>MONTHLY PASS</strong>
+                  <b>Price: $49.99</b>
+                </a>
+              </div>
+                  
+   
+</div>
+    </div><div class="moto-cell col-sm-2" data-container="container"></div></div></div></div>
+<!-- 
+    <div class="moto-widget moto-widget-spacer moto-preset-default                  moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="lama" data-visible-on="mobile-v">
+    <div class="moto-widget-spacer-block" style="height:40px"></div>
+</div> -->
+
+</div>
 
 
 
@@ -99,7 +317,7 @@
             </div>
             </div></div><div class="moto-cell col-sm-6" data-container="container"><div class="moto-widget moto-widget-spacer moto-preset-default    moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="aaaa" data-visible-on="mobile-v">
     <div class="moto-widget-spacer-block" style="height:10px"></div>
-</div><div data-spacing="msss" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-medium moto-spacing-right-small moto-spacing-bottom-small moto-spacing-left-small" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_8"><a class="moto-link" data-action="url" target="_self" href="#">MONTHLY PLAN</a><br></p></div></div><div data-spacing="asss" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-small moto-spacing-left-small" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_normal">PRICE: $49.99<br></p></div></div><div data-spacing="asss" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-small moto-spacing-left-small" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_9">Access all races at all tracks available in the United States and Canada for one month. Benefits - Custom factor creation; Team collaboration - Share picks and handicap as a team; Factor to condition correlation analysis that's easy to use and takes 30 seconds;</p></div></div><div data-widget-id="wid__social_links__59a5189c1e138" class="moto-widget moto-widget-social-links moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-small moto-spacing-bottom-medium moto-spacing-left-small " data-widget="social_links" data-preset="2">
+</div><div data-spacing="msss" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-medium moto-spacing-right-small moto-spacing-bottom-small moto-spacing-left-small" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_8"><a class="moto-link" data-action="url" target="_self" href="#">MONTHLY PLAN</a><br></p></div></div><div data-spacing="asss" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-small moto-spacing-left-small" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_normal">PRICE: $49.99<br></p></div></div><div data-spacing="asss" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-small moto-spacing-left-small" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_9">Access all races at all tracks available in the United States and Canada for one month. Benefits - Custom factor creation; Team collaboration - Share picks and handicap as a team;</p></div></div><div data-widget-id="wid__social_links__59a5189c1e138" class="moto-widget moto-widget-social-links moto-preset-2 moto-align-left moto-spacing-top-small moto-spacing-right-small moto-spacing-bottom-medium moto-spacing-left-small " data-widget="social_links" data-preset="2">
         <ul class="moto-widget-social-links-list">
                                                         <li class="moto-widget-social-links-item">
                         <a href="http://demolink.motocms.com/" class="moto-widget-social-links-link moto-widget-social-links-link_facebook" data-provider="facebook" target="_blank"></a>
@@ -114,7 +332,7 @@
     </div></div></div></div></div></div></div></div></div><div class="moto-widget moto-widget-spacer moto-preset-default           moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="laaa" data-visible-on="mobile-v">
     <div class="moto-widget-spacer-block" style="height:10px"></div>
 </div></div>        
-
+<!--
 <div class="moto-widget moto-widget-row row-fixed" id ="service" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-12" data-container="container"><div data-spacing="lasa" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_7" style="text-align: center;">Services</p></div></div><div class="moto-widget moto-widget-divider moto-preset-default moto-align-center               moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto" data-widget="divider_horizontal" data-divider-type="horizontal" data-preset="default" data-width="9" data-animation="" data-spacing="aala" data-align="{&quot;desktop&quot;:&quot;center&quot;,&quot;tablet&quot;:&quot;&quot;,&quot;mobile-v&quot;:&quot;&quot;,&quot;mobile-h&quot;:&quot;&quot;}">
     <hr class="moto-widget-divider-line" style="width:9%">
 </div></div></div></div></div><div class="moto-widget moto-widget-row row-fixed row-gutter-0" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-3 undefined" data-container="container"><div data-css-name="moto-container_content_57b6d7664" class="moto-widget moto-widget-container moto-container_content_57b6d7664" data-widget="container" data-container="container"><div data-spacing="mala" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-medium moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_5" style="text-align: center;">FREE TRIAL</p><p class="moto-text_system_5" style="text-align: center;">SIGN UP</p></div></div><div class="moto-widget moto-widget-spacer moto-preset-default           moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="aaaa" data-visible-on="mobile-v">
@@ -131,10 +349,10 @@
     </div>
 
 
-    <!--<div data-widget-id="wid__button__59a5189c1d175" class="moto-widget moto-widget-button moto-preset-2 moto-align-center moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto " data-widget="button">
+    <div data-widget-id="wid__button__59a5189c1d175" class="moto-widget moto-widget-button moto-preset-2 moto-align-center moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto " data-widget="button">
             <a href="programs/index.html"   data-action="page" class="moto-widget-button-link moto-size-medium moto-link"><span class="fa moto-widget-theme-icon"></span> <span class="moto-widget-button-label">PROGRAM DETAILS</span></a>
 
-    </div>!-->
+    </div>
 
     </div></div><div class="moto-cell col-sm-3" data-container="container"><div data-css-name="moto-container_content_57b6d9fb6" class="moto-widget moto-widget-container moto-container_content_57b6d9fb6" data-widget="container" data-container="container"><div data-spacing="mala" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-medium moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_5" style="text-align: center;">WEEKEND<br>PASS<br></p></div></div><div class="moto-widget moto-widget-spacer moto-preset-default           moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="aaaa" data-visible-on="mobile-v">
     <div class="moto-widget-spacer-block" style="height:310px"></div>
@@ -149,12 +367,12 @@
     </div></div></div></div></div></div><div class="moto-widget moto-widget-row" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-12" data-container="container"><div class="moto-widget moto-widget-spacer moto-preset-default              moto-spacing-top-medium moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="mama" data-visible-on="mobile-v">
     <div class="moto-widget-spacer-block" style="height:0px"></div>
 </div></div></div></div></div>
-
+!-->
 <div data-css-name="moto-container_content_57b6e4dd14" class="moto-widget moto-widget-container moto-container_content_57b6e4dd14" data-widget="container" data-container="container"><div class="moto-widget moto-widget-spacer moto-preset-default         moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="laaa" data-visible-on="mobile-v">
     <div class="moto-widget-spacer-block" style="height:0px"></div>
 </div><div class="moto-widget moto-widget-row row-fixed row-gutter-0" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-12" data-container="container"><div data-css-name="moto-container_content_57b6e50015" class="moto-widget moto-widget-container moto-container_content_57b6e50015" data-widget="container" data-container="container"><div class="moto-widget moto-widget-spacer moto-preset-default          moto-spacing-top-medium moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="maaa" data-visible-on="mobile-v">
     <div class="moto-widget-spacer-block" style="height:5px"></div>
-</div><div class="moto-widget moto-widget-row" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-6 undefined" data-container="container"></div><div class="moto-cell col-sm-6" data-container="container"><div data-spacing="laaa" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_13"><span class="moto-color1_3">EQUINE</span>INTEL<br></p></div></div><div data-spacing="aama" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_7">PLEASE SIGN UP<br></p></div></div><div data-draggable-disabled="" data-spacing="sasa" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_7">WELCOME!<br></p></div></div><div class="moto-widget moto-widget-row" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-9 undefined" data-container="container"><div data-spacing="aala" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_9">"I used EquineIntel and on my third race a $50 exacta netted me $4,000!" - C.T....<br></p><p class="moto-text_system_9"><br></p><p class="moto-text_system_9">That is very different to big chain gyms with classes of tens... Our comradeship vibe is what makes training with us even more efficient!</p></div></div></div><div class="moto-cell col-sm-3" data-container="container"></div></div></div></div></div></div></div></div><div class="moto-widget moto-widget-spacer moto-preset-default         moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="lasa" data-visible-on="mobile-v">
+</div><div class="moto-widget moto-widget-row" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-6 undefined" data-container="container"></div><div class="moto-cell col-sm-6" data-container="container"><div data-spacing="laaa" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_13" style="font-family:'Lobster',cursive!important;"><span class="moto-color1_3">EQUINE</span>INTEL<br></p></div></div><div data-spacing="aama" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><!-- <p class="moto-text_system_7">PLEASE SIGN UP<br></p> --></div></div><div data-draggable-disabled="" data-spacing="sasa" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_7">WELCOME!<br></p></div></div><div class="moto-widget moto-widget-row" data-widget="row"><div class="container-fluid"><div class="row"><div class="moto-cell col-sm-9 undefined" data-container="container"><div data-spacing="aala" class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto" data-widget="text" data-preset="default"><div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_9">"I used EquineIntel and on my third race a $50 exacta netted me $4,000!" - C.T....<br></p><p class="moto-text_system_9"><br></p><p class="moto-text_system_9">That is very different to big chain gyms with classes of tens... Our comradeship vibe is what makes training with us even more efficient!</p></div></div></div><div class="moto-cell col-sm-3" data-container="container"></div></div></div></div></div></div></div></div><div class="moto-widget moto-widget-spacer moto-preset-default         moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="lasa" data-visible-on="mobile-v">
     <div class="moto-widget-spacer-block" style="height:10px"></div>
 </div></div></div></div></div></div><div class="moto-widget moto-widget-spacer moto-preset-default         moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="spacer" data-preset="default" data-spacing="laaa" data-visible-on="mobile-v">
     <div class="moto-widget-spacer-block" style="height:0px"></div>

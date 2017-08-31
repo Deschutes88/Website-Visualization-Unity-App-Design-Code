@@ -41,7 +41,9 @@
                         <small class="block ae-7"><span class="text-43"><a href="{{ route('password.request') }}">Forgot your password?</a></span></small>
                         <input class="button wide teal round uppercase ae-8 buttonBigger" type="submit" name="submit" id="submit-button" value="Sign In"/>
                         </form>
+                        <!--
                         <a href="{{ url('/login/facebook') }}" class="button wide round uppercase ae-8 buttonBigger btn-facebook" style="height: 50px; width: 350px; border-radius: 40px !important;"><i class="fa fa-facebook"></i> Facebook</a>
+                        !-->
                     </div>
                     <small class="block ae-10 block-43">
                         <span class="text-43" style="color:white;">
